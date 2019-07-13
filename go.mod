@@ -1,3 +1,3 @@
-module github.com/agatan/go-bandit
+module github.com/agatan/go-bandithttp
 
 go 1.12

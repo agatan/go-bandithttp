@@ -12,9 +12,9 @@ NOTE: This is just an experimental project.
 urlA, _ := url.Parse("https://foo.example.com")
 urlB, _ := url.Parse("https://bar.example.com")
 exp := &bandithttp.Experiment{
-	Name:			"TheExperiment",
+	Name:      "TheExperiment",
 	Algorithm: bandithttp.EpsilonGreedy(0.1),
-	Arms: []*bandithttp.Arm{
+	Arms:      []*bandithttp.Arm{
 		{Name: "foo", Handler: httputil.NewSingleHostReverseProxy(urlA)},
 		{Name: "bar", Handler: httputil.NewSingleHostReverseProxy(urlB)},
 	},
